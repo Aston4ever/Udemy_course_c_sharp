@@ -3,15 +3,15 @@
 public class Car
 {
     private string _brand;
-    private string _test;
     public string Model { get; set; }
     
     public bool IsLuxury { get; set; }
+    
     public string Brand
     {
         get
         {
-            if (isLuxury)
+            if (IsLuxury)
             {
                 return $"{_brand} Lux version";
             }
