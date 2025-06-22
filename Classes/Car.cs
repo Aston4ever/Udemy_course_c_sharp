@@ -2,15 +2,30 @@
 
 public class Car
 {
+    private string _brand;
+    private string _test;
     public string Model { get; set; }
+    
+    public bool IsLuxury { get; set; }
     public string Brand
     {
-        get => Model;
+        get
+        {
+            if (isLuxury)
+            {
+                return $"{_brand} Lux version";
+            }
+            else
+            {
+                return _brand;
+            }
+            
+        }
         set
         {
             if (string.IsNullOrEmpty(value))
             {
-                Brand = "Default";
+                Brand = "default value";
             }
             else
             {
@@ -19,12 +34,15 @@ public class Car
         }
     }
     
-    public Car(string model, string brand)
+    public Car(string model, string brand, bool isLuxury)
     {
         Model = model;
         Brand = brand;
-        
+        IsLuxury = isLuxury;
     }
-    
-    
+
+    public void Drive()
+    {
+        Console.WriteLine("Driving car");
+    }
 }
