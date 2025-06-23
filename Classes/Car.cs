@@ -34,7 +34,7 @@ public class Car
         }
     }
     
-    public Car(string model, string brand, bool isLuxury)
+    public Car(string model, string brand, bool isLuxury = false)
     {
         Model = model;
         Brand = brand;
