@@ -45,4 +45,9 @@ public class Car
     {
         Console.WriteLine("Driving car");
     }
+
+    public static void CarStuff()
+    {
+        Console.WriteLine("Car Stuff");
+    }
 }
