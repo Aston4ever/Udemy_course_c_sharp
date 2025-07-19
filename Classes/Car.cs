@@ -25,11 +25,11 @@ public class Car
         {
             if (string.IsNullOrEmpty(value))
             {
-                Brand = "default value";
+                _brand = "default value";
             }
             else
             {
-                Brand = value;
+                _brand = value;
             }
         }
     }
@@ -46,8 +46,9 @@ public class Car
         Console.WriteLine("Driving car");
     }
 
-    public static void CarStuff()
+    public static void CarStuff(Car car)
     {
-        Console.WriteLine("Car Stuff");
+        Console.WriteLine(car._brand);
+        
     }
 }

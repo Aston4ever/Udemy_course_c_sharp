@@ -2,9 +2,11 @@
 
 public class Customer
 {
+	private string _logo;
     public string Name { get; set; }
     public string Address { get; set; }
     public string ContactNumber { get; set; }
+	public string Logo{ get => _logo; set => _logo = value;}
 
     public Customer()
     {
