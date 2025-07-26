@@ -33,9 +33,11 @@ public class Car
             }
         }
     }
+    public static int NumberOfCars;
     
     public Car(string model, string brand, bool isLuxury = false)
     {
+        NumberOfCars++;
         Model = model;
         Brand = brand;
         IsLuxury = isLuxury;
