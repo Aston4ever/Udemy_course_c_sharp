@@ -3,6 +3,8 @@
 public class Car
 {
     private string _brand;
+    private static int NextID = 0;
+    private int _id;
     public string Model { get; set; }
     
     public bool IsLuxury { get; set; }
@@ -37,6 +39,7 @@ public class Car
     
     public Car(string model, string brand, bool isLuxury = false)
     {
+        _id =  NextID++;        
         NumberOfCars++;
         Model = model;
         Brand = brand;
