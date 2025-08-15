@@ -4,7 +4,7 @@ public class Car
 {
     private string _brand;
     private static int NextID = 0;
-    private int _id;
+    private readonly int _id;
     public string Model { get; set; }
     
     public bool IsLuxury { get; set; }
